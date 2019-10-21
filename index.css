@@ -26,7 +26,7 @@ body {
   width: 200px;
   height: 200px;
   background-color: #3a3a3a;
-  margin: 20px;
+  margin: 80px;
 }
 
 .fade-up {
@@ -61,14 +61,5 @@ body {
   100% {
     opacity: 0;
     transform: translateY(100px)
-  }
-}
-
-@keyframes earthquake {
-  0% {
-    transform: translateX(10px)
-  }
-  100% {
-    transform: translateX(-10px)
   }
 }
