@@ -4,13 +4,25 @@
     <meta charset="utf-8"/>
     <link href='index.css' rel='stylesheet' />
     <title>Animate on scroll</title>
+    <style id="earthquake">
+        @keyframes earthquake {
+          0% {
+            transform: translateX(10px)
+          }
+          100% {
+            transform: translateX(-10px)
+          }
+        }
+      </style>
   </head>
   <body>
     <div class='container'>
       <div class='topBox'></div>
       <div class='middleBox'></div>
       <div id='box1'></div>
+      <div id='box2' class='bottomBox earthquake'></div>
+      <input type="range" min="0" max="500" value="250" class="slider" id="myRange">
     </div>
-    <script src='index.js'></script>
+    <script src='index.js' id='stylesheet'></script>
   </body>
 </html>
