@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 300vh;
+}
+
+.topBox {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.middleBox {
+  background-color: darkgray;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 10vh;
+}
+
+.fade {
+  width: 200px;
+  height: 200px;
+  background-color: #3a3a3a;
+  animation: fade linear .3s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
