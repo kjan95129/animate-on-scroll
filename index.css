@@ -41,13 +41,13 @@ body {
 
 .earthquake {
   opacity: 1;
-  animation: earthquake infinite .05s;
+  animation: earthquake ease-out infinite .5s;
 }
 
 @keyframes fade-up {
   0% {
     opacity: 0;
-    transform: translateY(100px)
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
@@ -60,6 +60,6 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(100px)
+    transform: translateY(100px);
   }
 }

@@ -18,11 +18,23 @@ slider.addEventListener('input', () => {
   let sliderValue = slider.value
   let earthquake = document.querySelector('#earthquake')
   earthquake.innerHTML = `@keyframes earthquake {
-    0% {
-      transform: translateX(${sliderValue}px)
+    10% {
+      transform: rotate(${sliderValue}deg) translateX(${sliderValue*2}px);
+    }
+    30% {
+      transform: rotate(-${sliderValue}deg) translateX(-${sliderValue*2}px);
+    }
+    45% {
+      transform: rotate(${sliderValue}deg) translate(${sliderValue*2}px, -${sliderValue/4}px);
+    }
+    60% {
+      transform: rotate(${sliderValue}deg) translate(-${sliderValue*2}px, ${sliderValue/4}px);
+    }
+    80% {
+      transform: rotate(-${sliderValue}deg) translate(${sliderValue*2}px, -${sliderValue/4}px);
     }
     100% {
-      transform: translateX(-${sliderValue}px)
+      transform: rotate(${sliderValue}deg) translate(-${sliderValue*2}px, ${sliderValue/4}px);
     }
   }`
 })
