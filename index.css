@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 .container {
@@ -26,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 400px;
   height: 200px;
   background-color: #3a3a3a;
   margin: 80px;
@@ -35,41 +37,10 @@ body {
 
 .boxText {
   color: white;
-  font-family: 'Poppins', sans-serif;
   padding: 20px;
-}
-
-.fade-up {
-  opacity: 1;
-  animation: fade-up linear .5s;
-}
-
-.fade-up-opposite {
-  opacity: 0;
-  animation: fade-up-opposite linear .5s;
 }
 
 .earthquake {
   opacity: 1;
   animation: earthquake ease-out infinite .5s;
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-up-opposite {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
 }

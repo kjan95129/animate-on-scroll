@@ -3,19 +3,27 @@
   <head>
     <meta charset="utf-8"/>
     <link href='index.css' rel='stylesheet' />
+    <link href='animations.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     <title>Animate on scroll</title>
     <style id="earthquake"></style>
   </head>
   <body>
     <div class='container'>
-      <div class='topBox'></div>
       <div class='middleBox'></div>
-      <div id='box1'></div>
-      <div id='box2' class='bottomBox earthquake'>
+      <div animation='fade-up' class='bottomBox'></div>
+      <div animation='fade-left' class='bottomBox'></div>
+      <div animation='fade-right' class='bottomBox'></div>
+      <div animation='fade-down' class='bottomBox'></div>
+      <div animation='fade-up-left' class='bottomBox'></div>
+      <div animation='fade-up-right' class='bottomBox'></div>
+      <div animation='fade-down-left' class='bottomBox'></div>
+      <div animation='fade-down-right' class='bottomBox'></div>
+      
+      <!-- <div id='box2' class='bottomBox earthquake'>
         <p class='boxText' id='boxText'>ah</p>
       </div>
-      <input type="range" min="0" max="20" value="0" class="slider" id="myRange">
+      <input type="range" min="0" max="20" value="0" class="slider" id="myRange"> -->
     </div>
     <script src='index.js' id='stylesheet'></script>
   </body>
