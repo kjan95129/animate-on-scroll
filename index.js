@@ -20,7 +20,7 @@ const animationList = [
 const windowHeight = window.innerHeight
 let animationNodes = {}
 animationList.map(animation => {
-  animationNodes[animation] = document.querySelectorAll(`[animation="${animation}"]`)
+  animationNodes[animation] = document.querySelectorAll(`[data-animation="${animation}"]`)
 })
 
 const addAnimation = (node, animation) => {
