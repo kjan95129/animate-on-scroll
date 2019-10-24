@@ -18,12 +18,6 @@ code {
   flex-direction: column;
 }
 
-.topBox {
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-}
-
 .middleBox {
   display: flex;
   flex-direction: column;
@@ -44,6 +38,14 @@ code {
   background-color: #EDEDEA;
 }
 
+.bottomBox > :nth-child(odd) {
+  margin-left: 500px;
+}
+
+.bottomBox > :nth-child(even) {
+  margin-right: 500px;
+}
+
 .codeBox {
   border-radius: 10px;
   display: flex;
@@ -56,12 +58,34 @@ code {
   word-break: break-all;
 }
 
-.boxText {
-  color: white;
-  padding: 20px;
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
 }
 
-.earthquake {
-  opacity: 1;
-  animation: earthquake ease-out infinite .5s;
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
 }
