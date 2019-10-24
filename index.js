@@ -19,10 +19,19 @@ const animationList = [
 ]
 const windowHeight = window.innerHeight
 let animationNodes = {}
+
+// Loop through animationList, store all DOM nodes with data-animation
 animationList.map(animation => {
   animationNodes[animation] = document.querySelectorAll(`[data-animation="${animation}"]`)
 })
 
+/**
+ * Get a DOM node's current position and add/remove the 
+ * animation class based on scroll position
+ * 
+ * @param {DOMNode} node 
+ * @param {string} animation 
+ */
 const addAnimation = (node, animation) => {
   let nodePosition = node.offsetTop + node.offsetHeight
 
@@ -35,11 +44,26 @@ const addAnimation = (node, animation) => {
   }
 }
 
-document.addEventListener('scroll', () => {
+/**
+ * Main logic to loop through all DOM nodes and
+ * adds the animation class to each one.
+ */
+const addAnimationsToNodes = () => {
   Object.keys(animationNodes).map(key => {
     nodes = animationNodes[key]
     nodes.forEach(node => {
       addAnimation(node, key)
     })
   })
+}
+
+// Create animations on load
+window.onload = () => {
+  addAnimationsToNodes()
+}
+
+// Create animations while listening to scroll
+document.addEventListener('scroll', () => {
+  addAnimationsToNodes()
 })
+

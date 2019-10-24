@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: white;
   font-size: 20px;
 }
 
@@ -19,6 +18,7 @@ code {
 }
 
 .middleBox {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,6 +58,7 @@ code {
   word-break: break-all;
 }
 
+/******************** GITHUB BANNER ********************/
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out
 }

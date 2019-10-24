@@ -1,3 +1,4 @@
+/******************** CLASSES ********************/
 .fade-up {
   opacity: 1;
   animation: fade-up linear .3s;
@@ -78,6 +79,7 @@
   animation: fade-down-right-opposite linear .3s;
 }
 
+/******************** KEYFRAMES ********************/
 @keyframes fade-up {
   0% {
     opacity: 0;
